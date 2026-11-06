@@ -1,0 +1,9 @@
+services:
+  diagnostic:
+    build: .
+    image: diagnostic-tool
+    container_name: diagnostic
+    command: ["help"]
+    read_only: true
+    tmpfs:
+      - /tmp
